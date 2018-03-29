@@ -1,8 +1,8 @@
 
 CREATE TABLE take (
   id SERIAL PRIMARY KEY,
-  reader_code VARCHAR(10) NOT NULL REFERENCES readers (code),
-  book_code INT NOT NULL REFERENCES books (code),
+  student_id VARCHAR(10) NOT NULL REFERENCES students (id),
+  book_copy_id INT NOT NULL REFERENCES books_copies (id),
   date DATE NOT NULL DEFAULT CURRENT_DATE,
   back BOOLEAN NOT NULL DEFAULT FALSE
 );
