@@ -1,0 +1,7 @@
+
+CREATE TABLE authors (
+  id SERIAL PRIMARY KEY,
+  surname VARCHAR(50) NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  patronymic VARCHAR(50) NOT NULL
+);
